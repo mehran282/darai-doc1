@@ -1,0 +1,208 @@
+.team-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.team-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summary-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.summary-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.summary-value {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.team-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+}
+
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  min-width: 800px;
+}
+
+.team-table thead {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+}
+
+.team-table th {
+  padding: 1.2rem;
+  text-align: right;
+  font-weight: 600;
+}
+
+.team-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: right;
+}
+
+.team-table tbody tr:hover {
+  background: #f8fafc;
+  transition: background 0.2s;
+}
+
+.role-name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.role-count {
+  color: #64748b;
+}
+
+.role-responsibility {
+  color: #475569;
+}
+
+.role-salary {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.total-row {
+  background: #f1f5f9;
+  font-weight: 700;
+}
+
+.total-label {
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.total-value {
+  color: #10b981;
+  font-size: 1.2rem;
+}
+
+.chart-container {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+  border: 2px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+
+.chart-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+  animation: pulse 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.chart-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.chart-title {
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.chart-icon {
+  display: inline-block;
+  font-size: 1.8rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.chart-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.chart-content {
+  position: relative;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .team-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-table {
+    font-size: 0.9rem;
+  }
+}
