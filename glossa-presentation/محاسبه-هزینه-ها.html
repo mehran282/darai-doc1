@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاسبه هزینه‌های پروژه گلوسا</title>
+    <style>
+        @font-face {
+            font-family: 'Vazirmatn';
+            src: url('public/fonts/Vazirmatn-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Vazirmatn';
+            src: url('public/fonts/Vazirmatn-Bold.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Vazirmatn';
+            src: url('public/fonts/Vazirmatn-Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Vazirmatn', 'Tahoma', 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            direction: rtl;
+        }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; border-bottom: 2px solid #95a5a6; padding-bottom: 5px; margin-top: 30px; }
+        h3 { color: #7f8c8d; margin-top: 20px; }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: right;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 30px 0;
+        }
+        strong {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+<h1>محاسبه هزینه‌های پروژه گلوسا - سال اول</h1>
+<p><strong>تاریخ:</strong> 1404/10/05</p>
+<p><strong>قیمت دلار:</strong> 150,000 تومان</p>
+<p><strong>نرخ برق (روز):</strong> 983 تومان/kWh (تعرفه صنعتی 1404)</p>
+<p><strong>نرخ اینترنت (روز):</strong> 5 میلیون تومان/ماه (100Mbps اختصاصی)</p>
+<hr>
+<h2>1. هزینه سخت‌افزار</h2>
+<table>
+<tr>
+<th>آیتم</th>
+<th>مبلغ (میلیارد تومان)</th>
+</tr>
+<tr>
+<td>کارت گرافیک H200</td>
+<td>3.5</td>
+</tr>
+<tr>
+<td>باقی سخت‌افزار سرور</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td><strong>جمع سخت‌افزار</strong></td>
+<td><strong>5</strong></td>
+</tr>
+</table>
+<p><strong>نکته مهم:</strong> هر کارت گرافیک H200 حداکثر <strong>100 کاربر همزمان</strong> را پشتیبانی می‌کند. برای پشتیبانی از تعداد کاربران بیشتر، باید <strong>کلاستر راه‌اندازی</strong> شود (افزودن کارت گرافیک‌های بیشتر).</p>
+<hr>
+<h2>2. هزینه حقوق تیم</h2>
+<h3>تیم 3 نفره برای کل سال:</h3>
+<table>
+<tr>
+<th>نقش</th>
+<th>حقوق ماهانه (میلیون تومان)</th>
+<th>مدت (ماه)</th>
+<th>جمع (میلیون تومان)</th>
+</tr>
+<tr>
+<td>توسعه و آپدیت (مهندس AI/ML)</td>
+<td>75</td>
+<td>12</td>
+<td>900</td>
+</tr>
+<tr>
+<td>پشتیبانی و نگهداری</td>
+<td>45</td>
+<td>12</td>
+<td>540</td>
+</tr>
+<tr>
+<td>نگهداری سرور، شبکه و امنیت (DevOps/Security)</td>
+<td>65</td>
+<td>12</td>
+<td>780</td>
+</tr>
+<tr>
+<td><strong>جمع کل حقوق تیم</strong></td>
+<td></td>
+<td></td>
+<td><strong>2,220</strong> (2.22 میلیارد تومان)</td>
+</tr>
+</table>
+<p><strong>جمع کل حقوق تیم:</strong> <strong>2.22 میلیارد تومان</strong></p>
+<h3>توضیحات:</h3>
+<ul><li><strong>توسعه و آپدیت:</strong> مسئولیت توسعه مدل‌های AI، به‌روزرسانی و بهبود عملکرد گلوسا</li></ul>
+<ul><li><strong>پشتیبانی و نگهداری:</strong> مسئولیت پشتیبانی کاربران، مانیتورینگ سیستم و رفع مشکلات</li></ul>
+<ul><li><strong>نگهداری سرور، شبکه و امنیت:</strong> مسئولیت مدیریت زیرساخت، شبکه، امنیت و DevOps</li></ul>
+<hr>
+<h2>3. هزینه‌های زیرساخت و عملیاتی</h2>
+<h3>برق سرور:</h3>
+<ul><li>مصرف H200: 6 × 3,300W = 19.8kW</li></ul>
+<ul><li>مصرف سالانه: 19.8kW × 24h × 365d × 0.7 (میانگین) = 121,000 kWh</li></ul>
+<ul><li>نرخ برق صنعتی 1404: 9,832 ریال/kWh = <strong>983 تومان/kWh</strong> (نرخ روز)</li></ul>
+<ul><li>هزینه برق سالانه: 121,000 × 983 = <strong>118,943,000 تومان</strong> = <strong>118.943 میلیون تومان</strong></li></ul>
+<h3>اینترنت و ارتباطات:</h3>
+<ul><li>اینترنت اختصاصی 100Mbps: <strong>5 میلیون تومان/ماه</strong> (نرخ روز 1404)</li></ul>
+<ul><li>هزینه سالانه: 5 میلیون تومان × 12 = <strong>60 میلیون تومان</strong></li></ul>
+<h3>دیتاسنتر و فضای سرور:</h3>
+<ul><li>Colocation برای سرور H200 (4-8 یونیت): <strong>15 میلیون تومان/ماه</strong></li></ul>
+<ul><li>هزینه سالانه: 15 میلیون تومان × 12 = <strong>180 میلیون تومان</strong></li></ul>
+<p><strong>جمع زیرساخت:</strong> 118.943 + 60 + 180 = <strong>358.943 میلیون تومان</strong></p>
+<hr>
+<h2>4. هزینه‌های نرم‌افزار و لایسنس</h2>
+<ul><li>لایسنس‌های نرم‌افزاری (OS، Database، Monitoring): <strong>200 میلیون تومان</strong></li></ul>
+<ul><li>ابزارهای توسعه و CI/CD: <strong>100 میلیون تومان</strong></li></ul>
+<p><strong>جمع نرم‌افزار:</strong> <strong>300 میلیون تومان</strong></p>
+<hr>
+<h2>5. هزینه‌های سرویس AI</h2>
+<ul><li>بسته ماهیانه API (100,000 پیام/ماه): <strong>100 میلیون تومان/ماه</strong></li></ul>
+<ul><li>هزینه سالانه: 100 میلیون تومان × 12 = <strong>1,200 میلیون تومان</strong></li></ul>
+<p><strong>نکته:</strong> در صورت نیاز به پیام‌های بیشتر، باید بسته‌های اضافی خریداری شود.</p>
+<p><strong>جمع سرویس AI:</strong> <strong>1.2 میلیارد تومان</strong></p>
+<hr>
+<h2>6. هزینه‌های آموزش</h2>
+<ul><li>آموزش کارکنان (8 نفر × 3 دوره): <strong>150 میلیون تومان</strong></li></ul>
+<p><strong>جمع آموزش:</strong> <strong>150 میلیون تومان</strong></p>
+<hr>
+<h2>7. هزینه‌های نگهداری و پشتیبانی</h2>
+<ul><li>سیستم‌های backup: <strong>200 میلیون تومان</strong></li></ul>
+<p><strong>جمع نگهداری:</strong> <strong>200 میلیون تومان</strong></p>
+<hr>
+<h2>خلاصه کل هزینه‌ها</h2>
+<table>
+<tr>
+<th>ردیف</th>
+<th>بخش</th>
+<th>مبلغ (میلیارد تومان)</th>
+<th>توضیحات</th>
+</tr>
+<tr>
+<td>1</td>
+<td>سخت‌افزار</td>
+<td>5</td>
+<td>کارت گرافیک H200 (3.5) + باقی سخت‌افزار (1.5)</td>
+</tr>
+</table>
+<p><strong>نکته:</strong> هر کارت گرافیک H200 حداکثر <strong>100 کاربر همزمان</strong> را پشتیبانی می‌کند. برای پشتیبانی از تعداد کاربران بیشتر، باید <strong>کلاستر راه‌اندازی</strong> شود.</p>
+<table>
+<tr>
+<th>2</th>
+<th>حقوق تیم (3 نفر)</th>
+<th>2.22</th>
+<th>توسعه (75 میلیون تومان/ماه) + پشتیبانی (45 میلیون تومان/ماه) + DevOps (65 میلیون تومان/ماه)</th>
+</tr>
+<tr>
+<td>3</td>
+<td>زیرساخت</td>
+<td>0.359</td>
+<td></td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp; - برق</td>
+<td>0.119</td>
+<td>نرخ روز: <strong>983 تومان/kWh</strong> (تعرفه صنعتی 1404)</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp; - اینترنت</td>
+<td>0.06</td>
+<td>نرخ روز: <strong>5 میلیون تومان/ماه</strong> (100Mbps اختصاصی)</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp; - دیتاسنتر</td>
+<td>0.18</td>
+<td>Colocation (4-8 یونیت)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>نرم‌افزار و لایسنس</td>
+<td>0.3</td>
+<td>OS، Database، Monitoring tools، CI/CD</td>
+</tr>
+<tr>
+<td>5</td>
+<td>سرویس AI (API)</td>
+<td>1.2</td>
+<td>بسته ماهیانه 100,000 پیام (100 میلیون تومان/ماه)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>آموزش</td>
+<td>0.15</td>
+<td>آموزش کارکنان</td>
+</tr>
+<tr>
+<td>7</td>
+<td>نگهداری و پشتیبانی</td>
+<td>0.2</td>
+<td>Backup</td>
+</tr>
+<tr>
+<td><strong>جمع کل</strong></td>
+<td></td>
+<td><strong>9.729</strong></td>
+<td></td>
+</tr>
+</table>
+<hr>
+<h2>نتیجه‌گیری</h2>
+<p><strong>بودجه کل سال اول: 9.729 میلیارد تومان</strong></p>
+<p>این محاسبه بر اساس:</p>
+<ul><li>قیمت‌های واقعی بازار ایران (1404)</li></ul>
+<ul><li>حقوق متخصصان AI و DevOps</li></ul>
+<ul><li><strong>نرخ روز برق:</strong> 983 تومان/kWh (تعرفه صنعتی 1404)</li></ul>
+<ul><li><strong>نرخ روز اینترنت:</strong> 5 میلیون تومان/ماه (100Mbps اختصاصی)</li></ul>
+<ul><li>هزینه‌های واقعی زیرساخت و دیتاسنتر</li></ul>
+<ul><li>مصرف برق واقعی سرور H200</li></ul>
+<p><strong>نکته:</strong> این محاسبه شامل تمام هزینه‌های واقعی پروژه است و می‌تواند به عنوان مبنای بودجه‌ریزی استفاده شود.</p>
+
+</body>
+</html>
