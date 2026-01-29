@@ -32,7 +32,7 @@ const Challenges = () => {
     >
       <div className="section-container">
         <h2 className="section-title">شناسایی چالش‌ها و راه‌حل‌ها</h2>
-        <p className="section-subtitle">ماتریس چالش‌های احتمالی و استراتژی مدیریت تغییر</p>
+        <p className="section-subtitle">ماتریس چالش‌های احتمالی</p>
         
         <div className="challenges-grid">
           {challenges.map((challenge, index) => (
@@ -69,81 +69,6 @@ const Challenges = () => {
               </div>
             </motion.div>
           ))}
-        </div>
-
-        <div className="strategy-section">
-          <h3 className="strategy-title">استراتژی مدیریت تغییر</h3>
-          <div className="strategy-list">
-            <motion.div
-              className="strategy-item"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-            >
-              <div className="strategy-number">{convertToPersianNumbers('1')}</div>
-              <div className="strategy-content">
-                <h4>ارتباط موثر</h4>
-                <p>اطلاع‌رسانی ماهانه</p>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              className="strategy-item"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-            >
-              <div className="strategy-number">{convertToPersianNumbers('2')}</div>
-              <div className="strategy-content">
-                <h4>آموزش مستمر</h4>
-                <p>جلسات آموزش هر ۳ ماه</p>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              className="strategy-item"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-            >
-              <div className="strategy-number">{convertToPersianNumbers('3')}</div>
-              <div className="strategy-content">
-                <h4>تشویق مشارکت</h4>
-                <p>پاداش برای اتخاذ سریع</p>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              className="strategy-item"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-            >
-              <div className="strategy-number">{convertToPersianNumbers('4')}</div>
-              <div className="strategy-content">
-                <h4>پشتیبانی فنی</h4>
-                <p>خط تلفن فوری</p>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              className="strategy-item"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-            >
-              <div className="strategy-number">{convertToPersianNumbers('5')}</div>
-              <div className="strategy-content">
-                <h4>بازخورد</h4>
-                <p>نظرسنجی ماهانه</p>
-              </div>
-            </motion.div>
-          </div>
         </div>
       </div>
     </motion.section>

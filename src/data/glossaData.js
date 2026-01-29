@@ -4,7 +4,7 @@ export const projectInfo = {
   company: "شرکت همفکران",
   author: "مهران قلمبر",
   systemName: "Glossa",
-  client: "وزارت (بخش دستیاری و پشتیبانی داخلی)",
+  client: "سازمان امور مالیاتی",
   period: "۱۴۰۴ (۱ سال اجرا + پشتیبانی سالانه)",
   date: "۱۴۰۴/۱۱/۰۵",
   version: "۱.۰",
@@ -26,7 +26,7 @@ export const mainGoals = [
   },
   {
     title: "نمایش رهبری فناوری",
-    description: "رهبری در دولت ایران در عصر هوش مصنوعی"
+    description: "انقلاب هوشمند: تبدیل ۱۵ نیروی پشتیبانی سنتی به یک دستیار هوش مصنوعی قدرتمند که ۲۴/۷ با دقت ۹۸% و سرعت زیر ۳ ثانیه پاسخ می‌دهد"
   },
   {
     title: "توسعه قابلیت‌های داخلی",
@@ -40,7 +40,7 @@ export const mainGoals = [
 
 export const comparisonMetrics = [
   { metric: "ساعات دسترسی", current: "۸ ساعت (۸-۱۶)", after: "۲۴ ساعت", improvement: "+۶۶%" },
-  { metric: "زمان متوسط پاسخ", current: "۲-۴ ساعت", after: "۱۰ ثانیه", improvement: "۹۹.۷% بهتر" },
+  { metric: "زمان متوسط پاسخ", current: "۲-۴ ساعت", after: "زیر ۳ ثانیه", improvement: "۹۹.۹% بهتر" },
   { metric: "درصد خودکارسازی", current: "۰%", after: "۷۵-۸۰%", improvement: "+۷۵%" },
   { metric: "هزینه سالانه", current: "۱۷.۵ میلیارد تومان", after: "۷.۳ میلیارد تومان", improvement: "-۵۸.۳%" },
   { metric: "هزینه هر تعامل", current: "۴,۲۲۰ هزار تومان", after: "۲,۴۷۰ هزار تومان", improvement: "-۴۱.۵%" }, // این عدد از سند اصلی است
@@ -51,29 +51,26 @@ export const comparisonMetrics = [
 export const roadmapPhases = [
   {
     id: 1,
-    title: "فاز اول: آماده‌سازی و تربیت Glossa",
+    title: "فاز اول: پایلوت و آموزش Glossa",
     duration: "۳ ماه (بهمن ۱۴۰۴ - فروردین ۱۴۰۵)",
-    team: "۵ نفر",
-    budget: 5,
+    team: "۵",
+    budget: 6.445, // شامل خرید سخت‌افزار، راه‌اندازی اولیه، آموزش و پایلوت ۳ ماهه
     actions: [
-      "نصب و تنظیم Glossa بر روی سرورهای وزارت",
-      "آموزش ۸ نفر کارکنان موجود برای نقش‌های نگهبان سامانه",
       "تنظیم پارامترهای Glossa بر اساس الگوی سؤالات موجود",
       "انجام تست‌های ایمنی و امنیتی کامل",
-      "انتقال ۲۰% تیکت‌های موجود برای تست اولیه"
+      "انجام پایلوت با ۲۰% تیکت‌های موجود",
+      "جمع‌آوری بازخورد کاربران و بهبود مدل‌ها"
     ]
   },
   {
     id: 2,
-    title: "فاز دوم: پایلوت و گسترش Glossa",
+    title: "فاز دوم: گسترش Glossa",
     duration: "۵ ماه (اردیبهشت ۱۴۰۵ - شهریور ۱۴۰۵)",
-    team: "۸ نفر",
-    budget: 1.2,
+    team: "۸",
+    budget: 1.658, // سهم بودجه برای گسترش پوشش و توسعه ۵ ماهه
     actions: [
       "افزایش پوشش Glossa به ۵۰% تیکت‌های ورودی",
-      "جمع‌آوری بازخورد کاربران و بهبود مدل‌ها",
-      "آموزش بخش‌های دیگر وزارت",
-      "ایجاد اتاق کنترل ۲۴/۷",
+      "آموزش بخش‌های دیگر سازمان امور مالیاتی",
       "انتشار گزارش‌های تفصیلی"
     ]
   },
@@ -81,11 +78,11 @@ export const roadmapPhases = [
     id: 3,
     title: "فاز سوم: توسعه و پایدارسازی Glossa",
     duration: "۴ ماه (مهر ۱۴۰۵ - دی ۱۴۰۵)",
-    team: "۱۰ نفر",
-    budget: 1.1,
+    team: "۱۵",
+    budget: 1.326, // سهم بودجه برای بهینه‌سازی و پایدارسازی ۴ ماهه
     actions: [
       "افزایش پوشش Glossa به ۷۵-۸۰%",
-      "گسترش به سایر بخش‌های وزارت",
+      "گسترش به سایر بخش‌های سازمان امور مالیاتی",
       "پیوند یکپارچه با سایر سامانه‌های دولتی",
       "بهینه‌سازی مدل Glossa",
       "راه‌اندازی API"
@@ -95,7 +92,7 @@ export const roadmapPhases = [
     id: 4,
     title: "پشتیبانی و نگهداری سالانه",
     duration: "سالانه (از سال دوم به بعد)",
-    team: "۳ نفر",
+    team: "۳",
     budget: 0.6,
     actions: [
       "نگهداری روتینی و بهینه‌سازی مستمر",
@@ -109,16 +106,12 @@ export const roadmapPhases = [
 export const kpiData = {
   quantitative: [
     { metric: "نرخ خودکارسازی", year1: 60, year2: 75, year3: 80, unit: "%" },
-    { metric: "زمان پاسخ اولیه (ثانیه)", year1: 10, year2: 5, year3: 3, unit: "ثانیه" },
+    { metric: "زمان پاسخ اولیه (ثانیه)", year1: 2.5, year2: 2.2, year3: 2, unit: "ثانیه" },
     { metric: "نرخ حل مسئله", year1: 65, year2: 78, year3: 85, unit: "%" },
-    { metric: "میانگین زمان رسیدگی (دقیقه)", year1: 2, year2: 1.5, year3: 1, unit: "دقیقه" },
-    { metric: "در دسترس بودن سیستم", year1: 99.5, year2: 99.8, year3: 99.95, unit: "%" },
-    { metric: "حجم تیکت‌ها (هزار)", year1: 300, year2: 350, year3: 400, unit: "هزار" }
+    { metric: "میانگین زمان رسیدگی (دقیقه)", year1: 2, year2: 1.5, year3: 1, unit: "دقیقه" }
   ],
   qualitative: [
     { metric: "رضایت مشتری (CSAT)", target: "۸۵٪+", description: "نظرسنجی رضایت مشتری" },
-    { metric: "امتیاز خالص ترویج (NPS)", target: "۵۰+", description: "احتمال توصیه به دیگران" },
-    { metric: "رضایت کارکنان", target: "۸۰٪", description: "رضایت تیم پشتیبانی" },
     { metric: "دسترسی (۲۴/۷)", target: "بدون نقص", description: "دسترسی ۲۴ ساعته و ۷ روز هفته" },
     { metric: "امنیت داده", target: "۱۰۰٪ انطباق", description: "رعایت کامل استانداردهای امنیتی" }
   ]
@@ -126,11 +119,11 @@ export const kpiData = {
 
 export const financialData = {
   year1: {
-    budget: 7.3, // محاسبه: فاز ۱ (۵) + فاز ۲ (۱.۲) + فاز ۳ (۱.۱) = ۷.۳ میلیارد تومان
-    savings: 10.2, // صرفه‌جویی سال اول: نیروی انسانی (۱۷.۵) - گلوسا (۷.۳) = ۱۰.۲ میلیارد تومان
-    roi: 139.7, // محاسبه: (۱۰.۲ / ۷.۳) * ۱۰۰ = ۱۳۹.۷%
-    paybackPeriod: 8.6, // محاسبه: (۷.۳ / ۱۰.۲) * ۱۲ = ۸.۶ ماه
-    description: "اجرای کامل پروژه (فاز ۱: آماده‌سازی + فاز ۲: پایلوت + فاز ۳: توسعه)"
+    budget: 9.429, // محاسبه واقعی سال اول بر اساس سند «محاسبه هزینه‌ها»
+    savings: 10.2, // صرفه‌جویی سال اول: نیروی انسانی (۱۷.۵) - گلوسا (~۷.۳) ≈ ۱۰.۲ میلیارد تومان
+    roi: 108.2, // (۱۰.۲ / ۹.۴۲۹) * ۱۰۰ ≈ ۱۰۸.۲%
+    paybackPeriod: 11.1, // (۹.۴۲۹ / ۱۰.۲) * ۱۲ ≈ ۱۱.۱ ماه
+    description: "اجرای کامل پروژه با بودجه سال اول بر اساس محاسبه تفصیلی هزینه‌ها"
   },
   year2: {
     budget: 5.599, // هزینه سالانه (۴.۴۷۹) با تورم ۲۵% = ۵.۵۹۹ میلیارد تومان
@@ -142,22 +135,27 @@ export const financialData = {
   year3: {
     budget: 6.999, // هزینه سالانه (۵.۵۹۹) با تورم ۲۵% = ۶.۹۹۹ میلیارد تومان
     savings: 20.345, // صرفه‌جویی سال سوم: نیروی انسانی (۲۷.۳۴۴) - گلوسا (۶.۹۹۹) = ۲۰.۳۴۵ میلیارد تومان
-    cumulativeROI: 235.3, // محاسبه: (۴۶.۸۲۱ / ۱۹.۸۹۸) * ۱۰۰ = ۲۳۵.۳%
+    cumulativeROI: 212.4, // محاسبه: (۴۶.۸۲۱ / ۲۲.۰۲۷) * ۱۰۰ ≈ ۲۱۲.۴%
     cumulativeReturn: 46.821, // صرفه‌جویی کل ۳ ساله: ۱۰.۲ + ۱۶.۲۷۶ + ۲۰.۳۴۵
     description: "پشتیبانی و نگهداری با تورم ۲۵% (حقوق تیم + زیرساخت + سرویس AI + نگهداری + به‌روزرسانی)"
   },
   total3Years: {
     totalSavings: 46.821, // صرفه‌جویی کل ۳ ساله: ۱۰.۲ + ۱۶.۲۷۶ + ۲۰.۳۴۵
-    totalInvestment: 19.898, // سال اول (۷.۳) + سال دوم (۵.۵۹۹) + سال سوم (۶.۹۹۹)
+    totalInvestment: 22.027, // سال اول (۹.۴۲۹) + سال دوم (۵.۵۹۹) + سال سوم (۶.۹۹۹)
     netReturn: 46.821, // صرفه‌جویی خالص
-    totalROI: 235.3, // محاسبه: (۴۶.۸۲۱ / ۱۹.۸۹۸) * ۱۰۰ = ۲۳۵.۳%
+    totalROI: 212.4, // محاسبه: (۴۶.۸۲۱ / ۲۲.۰۲۷) * ۱۰۰ ≈ ۲۱۲.۴%
     apiRevenue: 36,
     description: "سرمایه‌گذاری اولیه: سال اول | پشتیبانی سالانه با تورم ۲۵%: سال‌های بعد"
   },
+  // ترکیب بودجه سال اول بر اساس سند «محاسبه هزینه‌ها»
   budgetBreakdown: [
-    { phase: "فاز اول: آماده‌سازی و تربیت", amount: 5, percentage: 0 },
-    { phase: "فاز دوم: پایلوت و گسترش", amount: 1.2, percentage: 0 },
-    { phase: "فاز سوم: توسعه و پایدارسازی", amount: 1.1, percentage: 0 }
+    { phase: "سخت‌افزار", amount: 5, percentage: 0 },
+    { phase: "حقوق تیم (۳ نفر)", amount: 2.22, percentage: 0 },
+    { phase: "زیرساخت (برق، اینترنت، دیتاسنتر)", amount: 0.359, percentage: 0 },
+    { phase: "نرم‌افزار و لایسنس", amount: 0.3, percentage: 0 },
+    { phase: "آموزش", amount: 0.15, percentage: 0 },
+    { phase: "سرویس AI (API)", amount: 1.2, percentage: 0 },
+    { phase: "نگهداری و پشتیبانی", amount: 0.2, percentage: 0 }
   ]
 };
 
@@ -170,14 +168,12 @@ export const teamStructure = [
 export const challenges = [
   { challenge: "مقاومت تغییر", probability: "بالا", impact: "بالا", solution: "آموزش، شفاف‌بودن" },
   { challenge: "کیفیت داده", probability: "متوسط", impact: "بالا", solution: "تمیزکاری داده" },
-  { challenge: "خرابی فنی", probability: "کم", impact: "بالا", solution: "Backup، monitoring" },
-  { challenge: "ناامنی داده", probability: "کم", impact: "بالا", solution: "رمزنگاری، audit" },
-  { challenge: "عدم قبول کاربران", probability: "متوسط", impact: "متوسط", solution: "رابط بهتر" }
+  { challenge: "ناامنی داده", probability: "کم", impact: "بالا", solution: "رمزنگاری، audit" }
 ];
 
 export const satisfactionMetrics = [
   { metric: "رضایتمندی کاربران", current: 70, after: 96, improvement: 26 },
-  { metric: "زمان انتظار (دقیقه)", current: 180, after: 0.17, improvement: 99.7 },
+  { metric: "زمان انتظار (دقیقه)", current: 180, after: 0.04, improvement: 99.98 },
   { metric: "دسترسی ۲۴/۷", current: 0, after: 100, improvement: 100 },
   { metric: "دقت پاسخ", current: 70, after: 98, improvement: 28 }
 ];

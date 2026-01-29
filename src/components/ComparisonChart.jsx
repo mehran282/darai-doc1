@@ -70,7 +70,7 @@ const ComparisonChart = () => {
         const max = parseFloat(hoursMatch[2]);
         currentNum = (min + max) / 2; // میانگین = 3 ساعت
       } else {
-        // استخراج عدد از "10 ثانیه" یا "۱۰ ثانیه"
+        // استخراج عدد از "زیر 3 ثانیه" یا "زیر ۳ ثانیه"
         const secondsMatch = currentEnglish.match(/(\d+)/);
         if (secondsMatch) {
           currentNum = parseFloat(secondsMatch[1]) / 3600; // تبدیل ثانیه به ساعت
@@ -78,11 +78,11 @@ const ComparisonChart = () => {
           currentNum = parseFloat(currentEnglish.replace(/[^\d.]/g, '')) || 0;
         }
       }
-      // بعد: "10 ثانیه" یا "۱۰ ثانیه" = 0.0027 ساعت
+      // بعد: "زیر 3 ثانیه" یا "زیر ۳ ثانیه" = 0.0008 ساعت
       const afterSecondsMatch = afterEnglish.match(/(\d+)/);
-      afterNum = afterSecondsMatch ? parseFloat(afterSecondsMatch[1]) / 3600 : 10 / 3600; // تبدیل ثانیه به ساعت
+      afterNum = afterSecondsMatch ? parseFloat(afterSecondsMatch[1]) / 3600 : 2.5 / 3600; // تبدیل ثانیه به ساعت (زیر 3 ثانیه)
       // نرمال‌سازی: زمان کمتر = مقدار بیشتر در نمودار (چون بهتر است)
-      // تبدیل به دقیقه برای نمایش بهتر: 3 ساعت = 180 دقیقه، 10 ثانیه = 0.17 دقیقه
+      // تبدیل به دقیقه برای نمایش بهتر: 3 ساعت = 180 دقیقه، زیر 3 ثانیه = 0.04 دقیقه
       currentNum = currentNum * 60; // تبدیل به دقیقه
       afterNum = afterNum * 60; // تبدیل به دقیقه
       // نرمال‌سازی: حداکثر 240 دقیقه (4 ساعت) = 100%

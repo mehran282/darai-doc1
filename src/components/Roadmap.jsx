@@ -38,7 +38,6 @@ const Roadmap = () => {
                   <h3 className="phase-title">{phase.title}</h3>
                   <div className="phase-meta">
                     <span className="phase-duration">⏱️ {phase.duration}</span>
-                    <span className="phase-team">👥 {phase.team}</span>
                     <span className="phase-budget">💰 {convertToPersianNumbers(phase.budget.toLocaleString('fa-IR'))} میلیارد تومان</span>
                   </div>
                 </div>

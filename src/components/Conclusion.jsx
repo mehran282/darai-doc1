@@ -138,9 +138,7 @@ const Conclusion = () => {
 
   const benefits = [
     { icon: '💰', title: 'صرفه‌اقتصادی', desc: 'کاهش ۴۶.۱% و ROI ۸۵.۶% سال اول' },
-    { icon: '✅', title: 'ممکن', desc: 'فناوری اثبات‌شده' },
     { icon: '🎯', title: 'استراتژیک', desc: 'رهبری فناوری دولت' },
-    { icon: '🛡️', title: 'ریسک‌پذیر', desc: 'چالش‌های قابل مدیریت' },
     { icon: '📈', title: 'مقیاس‌پذیر', desc: 'از یک بخش به کل سازمان' }
   ];
 
@@ -190,51 +188,6 @@ const Conclusion = () => {
               <p>{benefit.desc}</p>
             </motion.div>
           ))}
-        </div>
-
-        <motion.div
-          className="final-recommendation"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="recommendation-content">
-            <h2 className="recommendation-title">🎯 سفارش نهایی</h2>
-            <p className="recommendation-text">
-              تصویب فوری و شروع اجرای دستیار هوش مصنوعی گلوسا با پرداخت کل بودجه{' '}
-              <strong>{convertToPersianNumbers('9.429')} میلیارد تومان</strong> در سال {convertToPersianNumbers('1404')}
-            </p>
-            
-            <div className="recommendation-actions">
-              <div className="action-item">
-                <span className="action-label">فوری:</span>
-                <span className="action-value">تصویب بودجه سال اول</span>
-              </div>
-              <div className="action-item">
-                <span className="action-label">بلافاصله:</span>
-                <span className="action-value">قرارداد شرکت همفکران</span>
-              </div>
-              <div className="action-item">
-                <span className="action-label">فاز ۱:</span>
-                <span className="action-value">راه‌اندازی (ماه ۱-۳)</span>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
-        <div className="footer">
-          <div className="footer-content">
-            <div className="footer-item">
-              <strong>شرکت:</strong> شرکت همفکران
-            </div>
-            <div className="footer-item">
-              <strong>نسخه:</strong> {convertToPersianNumbers('1.0')}
-            </div>
-            <div className="footer-item">
-              <strong>وضعیت:</strong> آماده تقدیم
-            </div>
-          </div>
         </div>
       </div>
     </motion.section>
